@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    tty: true
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules # node_modulesはコンテナにのみ存在させる
+    ports:
+      - "8080:8080"
