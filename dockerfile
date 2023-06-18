@@ -1,5 +1,5 @@
 # 使用するDockerイメージ
-FROM node:20.3.0-alpine
+FROM node:18.16.0-alpine
 
 # 作業ディレクトリの作成
 WORKDIR /usr/src/app
@@ -16,7 +16,7 @@ RUN npm install
 COPY . .
 
 # ポートの公開
-EXPOSE 8080
+EXPOSE 3000
 
 # 起動コマンド
-CMD [ "npm", "run", "dev" ]
+# CMD [ "npm", "run", "dev" ]

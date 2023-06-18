@@ -7,4 +7,4 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules # node_modulesはコンテナにのみ存在させる
     ports:
-      - "8080:8080"
+      - "3000:3000"
