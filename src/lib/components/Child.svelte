@@ -42,3 +42,6 @@
   <p class="text">{obj.text}</p>
 </div>
 
+<style>
+  img { width: 100px; }
+</style>
